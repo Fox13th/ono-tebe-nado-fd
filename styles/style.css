@@ -8,6 +8,7 @@
 
 .header__menu {
   justify-self: start;
+  align-self: center;
 }
 
 .header__link-list {
@@ -30,13 +31,22 @@
   height: 105px;
 }
 
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
 .address {
   display: flex;
   flex-direction: column;
-  justify-self: end;
-  align-items: flex-start;
   max-width: max-content;
+  padding-left: 153px;
   font-style: normal;
+}
+
+.header__address {
+  line-height: 26px;
+  padding-top: 3px;
 }
 
 .cover {
@@ -46,9 +56,10 @@
   min-height: min-content;
   text-transform: uppercase;
   color: white;
-  background-image: url("../images/cover.jpg");
+  background-image: url('../images/cover.jpg');
   background-size: cover;
-  padding: 165px 20px 50px;
+  background-position: center;
+  padding: 165px 20px 50px 50px;
   row-gap: 106px;
 }
 
@@ -76,10 +87,12 @@
 
 .aligned-text_center {
   text-align: center;
+  padding-top: 15px;
 }
 
 .aligned-text_right {
   text-align: right;
+  padding-top: 15px;
 }
 
 .letter-spacing-extended {
@@ -103,6 +116,7 @@
 }
 
 .bet-button {
+  font-family: Raleway, sans-serif;
   cursor: pointer;
   border: 1px solid white;
   background-color: transparent;
@@ -114,7 +128,7 @@
 }
 
 .lots {
-  padding: 180px 24px 120px;
+  padding: 180px 24px 115px;
 }
 
 .lots__heading {
@@ -139,6 +153,7 @@
 
 .card-link {
   cursor: pointer;
+  text-decoration: none;
 }
 
 .card {
@@ -153,15 +168,15 @@
 }
 
 .card_type_film {
-  background-image: url("../images/card-lot-01.jpg");
+  background-image: url('../images/card-lot-01.jpg');
 }
 
 .card_type_book {
-  background-image: url("../images/card-lot-02.jpg");
+  background-image: url('../images/card-lot-02.jpg');
 }
 
 .card_type_picture {
-  background-image: url("../images/card-lot-03.jpg");
+  background-image: url('../images/card-lot-03.jpg');
 }
 
 .card__title {
@@ -175,22 +190,29 @@
 .card__text {
   font-weight: 400;
   font-size: 20px;
+  line-height: 120%;
   z-index: 1;
 }
 
 .lots__look-more-link {
   display: flex;
   text-transform: lowercase;
+  text-underline-offset: 5px;
+  font-size: 20px;
   padding: 30px 40px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 24px;
+  padding: 12px;
+  grid-template-areas:
+    'about__logo about__title'
+    '. about__text';
 }
 
 .about__logo {
+  grid-area: about__logo;
   display: flex;
   background-color: black;
   width: 240px;
@@ -208,28 +230,38 @@
 }
 
 .about__title {
+  grid-area: about__title;
   display: flex;
+  font-size: 40px;
   align-items: center;
   text-transform: uppercase;
+  padding-top: 10px;
+  padding-left: 12px;
 }
 
 .about__text {
+  grid-area: about__text;
   display: flex;
   flex-direction: column;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  gap: 20px;
+  gap: 24px;
+  padding-top: 7px;
+  padding-left: 12px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 180px 50px 82px;
+  padding: 170px 50px 82px;
 }
 
 .footer__address {
+  padding-left: 0;
   justify-self: start;
+  font-size: 18px;
+  gap: 4px;
 }
 
 .footer__menu {
