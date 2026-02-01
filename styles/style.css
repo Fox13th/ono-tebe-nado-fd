@@ -3,7 +3,7 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   justify-items: center;
-  padding: 92px 50px 96px;
+  padding: 91px 50px 97px;
 }
 
 .header__menu {
@@ -13,7 +13,7 @@
 
 .header__link-list {
   display: flex;
-  gap: 32px;
+  gap: 31px;
   list-style: circle;
 }
 
@@ -40,13 +40,15 @@
   display: flex;
   flex-direction: column;
   max-width: max-content;
-  padding-left: 153px;
   font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .header__address {
-  line-height: 26px;
-  padding-top: 3px;
+  padding-left: 187px;
+  padding-right: 10px;
+  justify-self: end;
 }
 
 .cover {
@@ -260,8 +262,6 @@
 .footer__address {
   padding-left: 0;
   justify-self: start;
-  font-size: 18px;
-  gap: 4px;
 }
 
 .footer__menu {
